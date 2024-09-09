@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import data from "./jsons/2.json";
+import locations from "./components/locations";
 
 function App() {
   const [selectedLocation, setSelectedLocation] = useState(0);
+
+  const locationKey = `location${selectedLocation}` as keyof typeof locations;
+  const location = locations[locationKey];
 
   return (
     <div>
@@ -12,9 +15,9 @@ function App() {
       ) : (
         <div>
           <h1>
-            {data.location}. {data.name}
+            {location.location}. {location.name}
           </h1>
-          <p>{data.data.text}</p>
+          <p>{location.data.text}</p>
           <button onClick={() => setSelectedLocation(0)}>0</button>
         </div>
       )}

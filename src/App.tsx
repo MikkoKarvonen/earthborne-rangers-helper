@@ -12,7 +12,11 @@ function App() {
   return (
     <div>
       {selectedLocation === 0 ? (
-        <button onClick={() => setSelectedLocation(2)}>2</button>
+        <div>
+          {Array.from({ length: 10 }, (_, i) => (
+            <button onClick={() => setSelectedLocation(i)}>{i}</button>
+          ))}
+        </div>
       ) : (
         <Section
           location={location}

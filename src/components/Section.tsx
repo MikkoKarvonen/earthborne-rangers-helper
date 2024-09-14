@@ -6,11 +6,17 @@ interface locationProps {
     name: string;
     data: {
       index: number;
-      text?: string;
+      text?: {
+        type: string;
+        text: string;
+      }[];
       condition?: {
         name?: string;
         section?: string;
-        text?: string;
+        text?: {
+          type: string;
+          text: string;
+        }[];
       }[];
     }[];
   };
@@ -39,27 +45,46 @@ function Section({ location, setSelectedLocation }: locationProps) {
         <p>
           {location.location}.{sectionNumber}
         </p>
-        {section.text ? (
-          <p>{section.text}</p>
-        ) : (
-          section.condition?.map((condition, conditionIndex) => (
-            <div key={conditionIndex}>
-              {condition.name ? (
-                <p>
-                  If {condition.name}, go to{" "}
-                  <button onClick={() => goToSection(condition.section)}>
-                    {condition.section}
-                  </button>
-                </p>
-              ) : (
-                <p>{condition.text}</p>
-              )}
-            </div>
-          ))
-        )}
+        {section.text
+          ? section.text.map((text, index) => (
+              <p
+                key={index}
+                style={{
+                  textDecoration: text.type === "rule" ? "underline" : "none",
+                }}
+              >
+                {text.text}
+              </p>
+            ))
+          : section.condition?.map((condition, conditionIndex) => (
+              <div key={conditionIndex}>
+                {condition.name ? (
+                  <p>
+                    If {condition.name}, go to{" "}
+                    <button onClick={() => goToSection(condition.section)}>
+                      {condition.section}
+                    </button>
+                  </p>
+                ) : (
+                  condition.text?.map((text, index) => (
+                    <p
+                      key={index}
+                      style={{
+                        textDecoration:
+                          text.type === "rule" ? "underline" : "none",
+                      }}
+                    >
+                      {text.text}
+                    </p>
+                  ))
+                )}
+              </div>
+            ))}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (
-            <button key={i} onClick={() => setSectionNumber(i)}>{i}</button>
+            <button key={i} onClick={() => setSectionNumber(i)}>
+              {i}
+            </button>
           ))}
       </div>
       <button onClick={() => goToSection("0.0")}>Back</button>

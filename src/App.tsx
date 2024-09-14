@@ -14,7 +14,9 @@ function App() {
       {selectedLocation === 0 ? (
         <div>
           {Array.from({ length: 10 }, (_, i) => (
-            <button onClick={() => setSelectedLocation(i)}>{i}</button>
+            <button key={i} onClick={() => setSelectedLocation(i)}>
+              {i}
+            </button>
           ))}
         </div>
       ) : (

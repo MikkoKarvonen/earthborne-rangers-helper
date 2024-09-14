@@ -59,7 +59,7 @@ function Section({ location, setSelectedLocation }: locationProps) {
         )}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (
-            <button onClick={() => setSectionNumber(i)}>{i}</button>
+            <button key={i} onClick={() => setSectionNumber(i)}>{i}</button>
           ))}
       </div>
       <button onClick={() => goToSection("0.0")}>Back</button>

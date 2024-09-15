@@ -1,4 +1,4 @@
-const location7 = {
+const location9 = {
   location: 9,
   name: "THE MARSH OF REBIRTH",
   data: [
@@ -20,7 +20,46 @@ const location7 = {
         },
       ],
     },
+    {
+      index: 2,
+      condition: [
+        { name: "YOU ARE AT THE MARSH OF REBIRTH", section: "9.3" },
+        {
+          text: [
+            {
+              type: "story",
+              text: "You carefully pick through the vine-covered ruins. The ancient carbon- composite walls are hidden by muck and moss, worn down by water and weather.",
+            },
+            {
+              type: "story",
+              text: "You brush aside a layer of grime and find a map carved into the wall. It shows this building as well as a large cluster of buildings deeper in the swamp. If there are any artifacts worth salvaging, you’ll probably find them in the Marsh of Rebirth. You step out of the ruins and get your bearings.",
+            },
+            {
+              type: "rule",
+              text: "Exhaust each being.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      index: 3,
+      text: [
+        {
+          type: "story",
+          text: "The bunker is so covered in mud and reeds that it looks like just another hillock rising out of the swamp, but you spot a corner of dull carbon composite peeking through the grass. You find a hatch, pry it open, and cautiously climb into the black, cavernous interior.",
+        },
+        {
+          type: "story",
+          text: "Once inside, you see a series of rooms. Most are empty and overgrown, but in one room you find what appears to be a small dish of liquid metal with Estian script along the rim. You apply a universal power cell to the recharge port, and with some fiddling, you activate the device. Ripples flash across the surface, and suddenly the metal reforms into a topographical map of the swamp, replicated in stunning detail.",
+        },
+        {
+          type: "rule",
+          text: "Gain the Topographone reward card.",
+        },
+      ],
+    },
   ],
 };
 
-export default location7;
+export default location9;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import locations from "./components/locations";
+console.log("🚀 ~ locations:", Object.keys(locations));
 import Section from "./components/section";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div>
       {selectedLocation === 0 ? (
         <div>
-          {Array.from({ length: 10 }, (_, i) => (
+          {Array.from({ length: Object.keys(locations).length }, (_, i) => (
             <button key={i} onClick={() => setSelectedLocation(i)}>
               {i}
             </button>

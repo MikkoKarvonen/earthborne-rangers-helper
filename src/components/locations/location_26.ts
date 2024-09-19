@@ -1,26 +1,17 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+const location26 = {
+  location: 26,
+  name: "STONEWEAVER BRIDGE",
   data: [
     {
       index: 0,
       text: [
         {
           type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: "The Silverfin flows cheerily beneath the great bridge, which was coaxed from the very earth and shaped by the Stoneweavers in a display of great discipline. The shapers from the Monastery spent several years to manifest this marvel and only finished the work last spring. Since then, you can’t walk twenty paces in Spire without overhearing someone talking about how wonderfully useful it is.",
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location26;

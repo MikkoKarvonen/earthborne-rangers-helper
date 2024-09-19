@@ -1,13 +1,17 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+const location28 = {
+  location: 28,
+  name: "TERRAVORE",
   data: [
     {
       index: 0,
       text: [
         {
           type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
+          text: "From far away, it looks like a massive molehill winding through valleys and over ridge lines, a ridge of rocky ground cutting through the trees. Only as you get closer can you make out the incongruous details: the regular height and width of the ridge: the occasional vents oozing steam into the still air, and the gaping cavern where the ridge finally terminates in a glen.",
+        },
+        {
+          type: "story",
+          text: "As you get closer, you can see how the land—bushes, trees, rocks, and dirt—looks like it’s been scooped into that maw-like cavern. Then the entire 'ridge' shudders and slides forward, and a few more inches of land are shoveled into the maw. The entire ridge is one of the legendary terravores, a kilometers-long biomeld that slowly but inevitably consumes and processes everything in its path.",
         },
       ],
     },
@@ -16,11 +20,15 @@ const location7 = {
       text: [
         {
           type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: "You carefully climb into the gaping mouth of the terravore, coughing slightly as you breathe in the acrid, humid air. The light quickly fades away as you go deeper, and the air becomes thicker and thicker. The ground becomes more jumbled and chaotic as well, and you see rocks and tree trunks giving way to smaller, splintered chunks.",
+        },
+        {
+          type: "story",
+          text: "Eventually you come to a smoking, bubbling pool that seems to block your progress. You look around and manage to find two routes. There seems to be a path along the side of the pool, near a series of protrusions that look uncomfortably like rib bones in the side of the terravore. However, there is also a particularly large log half-submerged in the pool that it looks like you could crawl across.",
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location28;

@@ -1,26 +1,17 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+const location29 = {
+  location: 29,
+  name: "THE GREENBRIDGE",
   data: [
     {
       index: 0,
       text: [
         {
           type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: "A series of tall, vine-wreathed supports rise out of the swamp. Lengths of equally vine-wrapped cables stretch between them, creating a spindly living walkway above the treetops. The bridge creaks and sways as you walk upon it, and far below you can see the fortress of cypress trees known as the Cypress Citadel. How stable is this bridge?",
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location29;

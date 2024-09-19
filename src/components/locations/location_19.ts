@@ -1,13 +1,18 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+const location19 = {
+  location: 19,
+  name: "THE PLUMMET",
   data: [
     {
       index: 0,
-      text: [
+      condition: [
+        { name: "DACE, AMBITIOUS SHAPER IS IN PLAY", section: "19.1" },
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
+          text: [
+            {
+              type: "story",
+              text: "The Plummet is visible from kilometers away, a perfectly vertical, sheer cliff looming over the Valley. It’s impossible to climb, so the only way to the top is a series of dangerous trails around the edges, to approach it along the lip of the Valley from the north, or to zip to the summit on a spiderline.",
+            },
+          ],
         },
       ],
     },
@@ -16,11 +21,23 @@ const location7 = {
       text: [
         {
           type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: "You reach the lip of the Plummet, and you and Dace stare over the sheer drop. She takes a deep breath, and starts to pace back and forth along the edge. You hear her repeating, quietly 'I am light as a feather, rising to the sun,' over and over.",
+        },
+        {
+          type: "story",
+          text: "You start to say something about there being a better way to test this, but suddenly Dace hurls herself over the cliff! You dash to the edge to see her falling, then slowing, then gracefully gliding at the pace of a brisk walk. As she reaches the base of the Plummet, she stops, rises back up, then settles softly to the ground.",
+        },
+        {
+          type: "story",
+          text: "You can hear her whoop of victory echoing off the rocks.",
+        },
+        {
+          type: "rule",
+          text: "Gain the Light as a Feather reward card. Discard Dace. Return HELPING HAND to the collection. Record SEEN A PERSON FLY on the campaign tracker.",
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location19;

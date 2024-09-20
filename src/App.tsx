@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import locations from "./components/locations";
-console.log("🚀 ~ locations:", Object.keys(locations));
-import Section from "./components/section";
+import Section from "./components/Section";
 
 function App() {
   const [selectedLocation, setSelectedLocation] = useState(0);

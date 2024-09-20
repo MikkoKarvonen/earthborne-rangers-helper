@@ -1,29 +1,12 @@
 import { useState } from "react";
+import { LocationProp, TextSection } from "../types/LocationProp";
 
-interface locationProps {
-  location: {
-    location: number;
-    name: string;
-    data: {
-      index: number;
-      text?: {
-        type: string;
-        text: string;
-      }[];
-      condition?: {
-        name?: string;
-        section?: string;
-        text?: {
-          type: string;
-          text: string;
-        }[];
-      }[];
-    }[];
-  };
+interface LocationProps {
+  location: LocationProp;
   setSelectedLocation: (location: number) => void;
 }
 
-function Section({ location, setSelectedLocation }: locationProps) {
+function Section({ location, setSelectedLocation }: LocationProps) {
   const [sectionNumber, setSectionNumber] = useState(0);
 
   const section = location.data[sectionNumber];
@@ -36,6 +19,18 @@ function Section({ location, setSelectedLocation }: locationProps) {
     }
   };
 
+  const renderText = (textSection: TextSection) => (
+    <div
+      style={{
+        textDecoration: textSection.type === "rule" ? "underline" : "none",
+      }}
+    >
+      {textSection.text.map((text, index) => (
+        <p key={index}>{text}</p>
+      ))}
+    </div>
+  );
+
   return (
     <div>
       <h1>
@@ -45,41 +40,34 @@ function Section({ location, setSelectedLocation }: locationProps) {
         <p>
           {location.location}.{sectionNumber}
         </p>
-        {section.text
-          ? section.text.map((text, index) => (
-              <p
-                key={index}
-                style={{
-                  textDecoration: text.type === "rule" ? "underline" : "none",
-                }}
-              >
-                {text.text}
-              </p>
-            ))
-          : section.condition?.map((condition, conditionIndex) => (
-              <div key={conditionIndex}>
-                {condition.name ? (
-                  <p>
-                    If {condition.name}, go to{" "}
-                    <button onClick={() => goToSection(condition.section)}>
-                      {condition.section}
-                    </button>
-                  </p>
-                ) : (
-                  condition.text?.map((text, index) => (
-                    <p
-                      key={index}
-                      style={{
-                        textDecoration:
-                          text.type === "rule" ? "underline" : "none",
-                      }}
-                    >
-                      {text.text}
-                    </p>
-                  ))
-                )}
+        {section.section.map((s) => {
+          if (s.text !== undefined) {
+            const textSection = s.text;
+            return renderText(textSection);
+          }
+          if (s.condition !== undefined) {
+            return (
+              <div>
+                {s.condition.map((condition) => {
+                  if (condition.name !== undefined) {
+                    return (
+                      <p>
+                        If {condition.name}, go to{" "}
+                        <button onClick={() => goToSection(condition.section)}>
+                          {condition.section}
+                        </button>
+                      </p>
+                    );
+                  }
+                  if (condition.text !== undefined) {
+                    const textSection = condition.text;
+                    return renderText(textSection);
+                  }
+                })}
               </div>
-            ))}
+            );
+          }
+        })}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (
             <button key={i} onClick={() => setSectionNumber(i)}>

@@ -1,4 +1,4 @@
-import location1 from "./locations/location_1";
+// import location1 from "./locations/location_1";
 import location2 from "./locations/location_2";
 import location3 from "./locations/location_3";
 import location4 from "./locations/location_4";
@@ -27,6 +27,7 @@ import location26 from "./locations/location_26";
 import location27 from "./locations/location_27";
 import location28 from "./locations/location_28";
 import location29 from "./locations/location_29";
+/*
 import location30 from "./locations/location_30";
 import location31 from "./locations/location_31";
 import location32 from "./locations/location_32";
@@ -93,9 +94,10 @@ import location92 from "./locations/location_92";
 import location93 from "./locations/location_93";
 import location94 from "./locations/location_94";
 import location95 from "./locations/location_95";
+*/
 
 export default {
-  location1,
+  // location1,
   location2,
   location3,
   location4,
@@ -124,6 +126,7 @@ export default {
   location27,
   location28,
   location29,
+  /*
   location30,
   location31,
   location32,
@@ -190,4 +193,5 @@ export default {
   location93,
   location94,
   location95,
+  */
 };

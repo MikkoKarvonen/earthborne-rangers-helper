@@ -1,26 +1,24 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location54: LocationProp = {
+  location: 54,
+  name: "THE GREEN GUARDIAN",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "The Valley stretches out before you as you pass through a tangle of branches and reach a small overlook. An invigorating stillness fills the air, and for an undefinable moment, you are absorbed into the delicate play of color and light as the sun splashes across the landscape. Green, blue and auburn tints shimmer before you, chameleon-like, across the Valley floor. Then a swath of color several hundred meters ahead catches your gaze as it starts to sway.",
+              "A deep rumbling groan echoes from up ahead, and to your surprise, what you thought was merely another tree comes alive. An awkward lurch, and you catch the outline of an enormous being lumbering through the underbrush. Its body is covered in vines, roots and branches, as if the earth itself has risen up and begun to walk.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location54;

@@ -1,26 +1,48 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location30: LocationProp = {
+  location: 30,
+  name: "MICHAEL'S BOG",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
+          condition: [
+            { name: "IF KASENDE, EXPERT HUNTER IS IN PLAY", section: "30.1" },
+          ],
+          text: {
+            type: "story",
+            text: [
+              "‘Here we are,’ Kasende says. ‘Michael’s Bog.’ Amidst the swirling white mist, you can barely make out the shape of a ruin, nearly swallowed up by mounds of grass and half-sunken into the murky water. Beyond, the trail leads to the swamp, and you hear a rhythmic sloshing sound as something moves through the muck.",
+              "Kasende unslings her whispercrack darter. ‘Time to go to work,’ she says. ‘Keep an eye out. The hydraworms like to hide just beneath the surface of the water.’ You follow her into the swamp, ready to prune some hydraworms.",
+            ],
+          },
+        },
+        {
+          text: {
+            type: "story",
+            text: [
+              "Amidst the swirling white mist, you can barely make out the shape of the ruin, nearly swallowed up by mounds of grass and half-sunken into the murky water. Calypsa told you the whole bog was named after the first artifact an intrepid explorer found within, a red steel device of unknown purpose, inscribed with the characters: ‘—ty of Michael.’",
+            ],
+          },
         },
       ],
     },
     {
       index: 1,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "rule",
+            text: [
+              "Clear a hydraworm, then clear Kasende with  to help her hunt.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location30;

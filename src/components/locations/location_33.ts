@@ -1,26 +1,24 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location33: LocationProp = {
+  location: 33,
+  name: "THE SUNKEN OUTPOST",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "Kordo told you that when the Rangers first explored the Valley, they set up outposts every few kilometers. They had deliberately placed some in the most inhospitable locations, assuming that would be where they would be needed the most.",
+              "Pushing aside another curtain of moss and cobwebs, you see one of those forlorn outposts before you. The building has sunk deep into the swamp. Between the grime-caked walls and the hydraworms that seem to be inhabiting it, it's clear that no Ranger has visited this outpost in quite some time.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location33;

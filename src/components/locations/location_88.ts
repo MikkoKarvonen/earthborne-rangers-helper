@@ -1,26 +1,23 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location88: LocationProp = {
+  location: 88,
+  name: "THE TENEBRAE",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "As you walk into a clearing, a sinking sensation fills your chest, and each beat of your heart adds to your unease. You look up to see the dreaded specters known collectively as the Tenebrae drifting slowly overhead. Sounds of life grow still under their shadow. You hear a near inaudible sound that claws at the edges of your perception, like a chorus of labored breaths, wheezing through a single narrow aperture.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location88;

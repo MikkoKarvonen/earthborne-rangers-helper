@@ -1,26 +1,23 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location75: LocationProp = {
+  location: 75,
+  name: "THE WATERSPINNER",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "In the heart of the cave beneath Tumbledown, a concave bowl crackles with electrical energy that flows into a series of charging pedestals. Beyond the rushing torrent that fills the mouth of the cave, you see a flashing, whirling dynamo, suspended in the water by some invisible force and creating the electricity used by the people of Tumbledown.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location75;

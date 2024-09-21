@@ -1,26 +1,23 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location56: LocationProp = {
+  location: 56,
+  name: "THE CARBON FORGE",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "Even outside the compound, you hear the muted roar of the Carbon Forge and smell the sharp tang of ozone. Once beyond the wall, you can see the squat bulbous shape of the Forge itself, a gray kiln larger than three wagons. As you watch, a trio of sweating artificers haul a series of heavy curved beams out of the Forge’s mouth; frames for a roof. Another rushes forward to shovel graphite shards into a small hatch on the side. Blue sparks flicker within, and your hair stands on end as the Forge begins to reform the graphite into nano-assembled carbon items.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location56;

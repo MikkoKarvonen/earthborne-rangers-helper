@@ -1,26 +1,23 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location35: LocationProp = {
+  location: 35,
+  name: "RINGS OF THE MOON",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "Rising up from a series of small hillocks along the edges of Meadow’s vast prairie, the large towers each support a massive loop of dull-gray metal and ceramics. Some have broken into half- or quarter-circles, but a few are still intact. The locals in Meadow say that if you go to the edges of the Valley with a scope and look back through all the loops at once, you’ll see another world in a reality just sideways from your own. Almost every artificer who’s inspected the rings, however, believes they are part of a vast (and nonfunctional) sensor network.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location35;

@@ -1,26 +1,25 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location57: LocationProp = {
+  location: 57,
+  name: "A HEARTY BREW",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "The two-story inn and tavern is built as a hollow square with rooms opening up onto an open courtyard. Here you see guests sitting in wooden chairs with plates of food and flagons of spirits, most clustered around a flickering bonfire of multicolored flames.",
+              "As you move closer, you realize that the “fire” is actually a cunningly crafted sculpture of shards of amber, crimson, and bright ocher kinetic glass. It is lit from beneath, and the sparkling reflections dance across the guests’ faces even as they somehow bathe them in a soothing, comforting heat.",
+              "You hear the murmuring of a dozen different conversations as you walk through the tavern. Calypsa once told you that news spread faster in places like A Hearty Brew than anywhere else in the Valley. You imagine that if you needed to find someone’s location, asking around here would be a good way to start.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location57;

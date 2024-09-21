@@ -1,26 +1,23 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location40: LocationProp = {
+  location: 40,
+  name: "THE DEEP WOODS",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "The evergreen woods of the northern mountains consist of massive rotting cedars intermixed with silver firs draped in hanging moss. No light filters down from the canopy, leaving the forest floor a gloomy cathedral, crowded with tree trunks and lichen-covered rocks. You can’t see more than a few meters ahead, and all around you, the forest seems completely quiet.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location40;

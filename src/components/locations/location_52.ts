@@ -1,26 +1,24 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location52: LocationProp = {
+  location: 52,
+  name: "QUIET",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "You stare at the bushes ahead for a few minutes. Something seems wrong, but you can’t spot anything dangerous. Then, slowly, you make out the large lean body covered in a white coat of fur. The paws, each as big as your hand and sporting shining black claws. One of the ears, shredded and covered in lumps of pink scar tissue. And finally, the shining red-yellow eyes, staring back unblinking.",
+              "You’ve heard stories about the bearded lynx they call Quiet: that she hunts bearsloths for sport; that she relentlessly stalks prey from one end of the Valley to the other; that she attacked and killed the traveling artist Mars Keller, leaving only his sketchbook to bury at the Grove. Now, seeing her for yourself, you believe them.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location52;

@@ -1,26 +1,24 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location55: LocationProp = {
+  location: 55,
+  name: "MEGADAM RUINS",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
-        },
-      ],
-    },
-    {
-      index: 1,
-      text: [
-        {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "story",
+            text: [
+              "Rising up above the tree line, you see the craggy peaks of giant ruins, stretching out along the horizon like a mountain range. They appear to have once been pieces of the large crumbling wall looming in the distance, now long overgrown with trees and bushes. As you make your way deeper into the ruins, you find yourself in a maze of crumbling stone, unable to find a clear path forward. After some time searching, you stumble upon a large fissure scarring one of the ruins ahead. As you illuminate the entrance, what appears to be a long cavern springs up before you.",
+              "As you gaze deeper, you see the tunnel splits off in different directions into a labyrinthine array of passages carved through its belly. You catch a glimmer of something along a barren patch of ceiling, and you think you can make out the distinctive, even shine of industrial steel. If these passages were originally man-made, this is the only trace left of its makers’ mark, now buried in the endless, winding silence.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location55;

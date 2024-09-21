@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LocationProp, TextSection } from "../types/LocationProp";
+import useSound from "use-sound";
+
+import loc2sec0 from "../assets/audios/location2/0.mp3";
 
 interface LocationProps {
   location: LocationProp;
@@ -8,10 +11,15 @@ interface LocationProps {
 
 function Section({ location, setSelectedLocation }: LocationProps) {
   const [sectionNumber, setSectionNumber] = useState(0);
+  const [audioPlaying, setAudioPlaying] = useState(false);
+
+  const [play, { stop }] = useSound(loc2sec0);
 
   const section = location.data[sectionNumber];
 
   const goToSection = (section?: string) => {
+    stop();
+    setAudioPlaying(false);
     if (section) {
       const [loc, sec] = section.split(".");
       setSelectedLocation(parseInt(loc));
@@ -31,6 +39,21 @@ function Section({ location, setSelectedLocation }: LocationProps) {
     </div>
   );
 
+  const audioHandler = () => {
+    if (audioPlaying) {
+      stop();
+      setAudioPlaying(false);
+    } else {
+      play();
+      setAudioPlaying(true);
+    }
+  };
+
+  useEffect(() => {
+    stop();
+    setAudioPlaying(false);
+  }, [sectionNumber]);
+
   return (
     <div>
       <h1>
@@ -40,6 +63,9 @@ function Section({ location, setSelectedLocation }: LocationProps) {
         <p>
           {location.location}.{sectionNumber}
         </p>
+        <button onClick={() => audioHandler()}>
+          {audioPlaying ? "◼" : "⏵"}
+        </button>
         {section.section.map((s) => {
           if (s.text !== undefined) {
             const textSection = s.text;

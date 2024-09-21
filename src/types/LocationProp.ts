@@ -15,6 +15,13 @@ export interface LocationProp {
         section?: string;
         text?: TextSection;
       }[];
+      multiCondition?: {
+        name: string;
+        conditions: {
+          name?: string;
+          section?: string;
+        }[];
+      }[];
     }[];
   }[];
 }

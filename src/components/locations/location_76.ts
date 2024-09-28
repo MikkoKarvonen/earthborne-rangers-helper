@@ -221,3 +221,5 @@ const location76: LocationProp = {
     },
   ],
 };
+
+export default location76;

@@ -108,6 +108,31 @@ function Section({ location, setSelectedLocation }: LocationProps) {
               </div>
             );
           }
+          if (s.multiCondition !== undefined) {
+            return (
+              <div>
+                {s.multiCondition.map((condition) => {
+                  if (condition.name !== undefined) {
+                    return (
+                      <>
+                        <p>{condition.name}</p>
+                        {condition.conditions.map((condition) => (
+                          <p>
+                            If {condition.name}, go to{" "}
+                            <button
+                              onClick={() => goToSection(condition.section)}
+                            >
+                              {condition.section}
+                            </button>
+                          </p>
+                        ))}
+                      </>
+                    );
+                  }
+                })}
+              </div>
+            );
+          }
         })}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (

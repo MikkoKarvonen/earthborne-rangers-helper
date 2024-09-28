@@ -1,4 +1,4 @@
-// import location1 from "./locations/location_1";
+import location1 from "./locations/location_1";
 import location2 from "./locations/location_2";
 import location3 from "./locations/location_3";
 import location4 from "./locations/location_4";
@@ -97,7 +97,7 @@ import location95 from "./locations/location_95";
 */
 
 export default {
-  // location1,
+  location1,
   location2,
   location3,
   location4,

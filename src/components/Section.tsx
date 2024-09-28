@@ -93,6 +93,21 @@ function Section({ location, setSelectedLocation }: LocationProps) {
               </div>
             );
           }
+          if (s.choose !== undefined) {
+            return (
+              <div>
+                <p>{s.choose.name}</p>
+                {s.choose.values.map((choose) => {
+                  return (
+                    <>
+                      <p>{choose.name}</p>
+                      {choose.text?.map((text) => renderText(text))}
+                    </>
+                  );
+                })}
+              </div>
+            );
+          }
         })}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (

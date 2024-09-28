@@ -22,6 +22,13 @@ export interface LocationProp {
           section?: string;
         }[];
       }[];
+      choose?: {
+        name?: string;
+        values: {
+          name?: string;
+          text?: TextSection[];
+        }[];
+      };
     }[];
   }[];
 }

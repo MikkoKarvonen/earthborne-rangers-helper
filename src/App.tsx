@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import locations from "./components/locations";
 import Section from "./components/Section";
 
@@ -10,11 +9,15 @@ function App() {
   const location = locations[locationKey];
 
   return (
-    <div>
+    <div className=" h-svh flex justify-center items-center">
       {selectedLocation === 0 ? (
-        <div>
+        <div className="prose flex flex-wrap ">
           {Array.from({ length: Object.keys(locations).length + 1 }, (_, i) => (
-            <button key={i} onClick={() => setSelectedLocation(i)}>
+            <button
+              key={i}
+              className="btn btn-neutral mx-2 my-1 flex-auto "
+              onClick={() => setSelectedLocation(i)}
+            >
               {i}
             </button>
           ))}

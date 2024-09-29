@@ -29,9 +29,11 @@ function Section({ location, setSelectedLocation }: LocationProps) {
 
   const renderText = (textSection: TextSection) => (
     <div
-      style={{
-        textDecoration: textSection.type === "rule" ? "underline" : "none",
-      }}
+      className={
+        textSection.type === "rule"
+          ? ""
+          : "bg-base-200 px-5 py-1 border-2 border-base-300"
+      }
     >
       {textSection.text.map((text, index) => (
         <p key={index}>{text}</p>
@@ -55,17 +57,21 @@ function Section({ location, setSelectedLocation }: LocationProps) {
   }, [sectionNumber]);
 
   return (
-    <div>
-      <h1>
-        {location.location}. {location.name}
-      </h1>
+    <div className="prose h-fit">
+      <div className="flex justify-center">
+        <h1>
+          {location.location}. {location.name}
+        </h1>
+      </div>
       <div>
-        <p>
-          {location.location}.{sectionNumber}
-        </p>
-        <button onClick={() => audioHandler()}>
-          {audioPlaying ? "◼" : "⏵"}
-        </button>
+        <div className="flex justify-between">
+          <p>
+            {location.location}.{sectionNumber}
+          </p>
+          <button className="btn btn-neutral" onClick={() => audioHandler()}>
+            {audioPlaying ? "◼" : "⏵"}
+          </button>
+        </div>
         {section.section.map((s) => {
           if (s.text !== undefined) {
             const textSection = s.text;
@@ -79,7 +85,10 @@ function Section({ location, setSelectedLocation }: LocationProps) {
                     return (
                       <p>
                         If {condition.name}, go to{" "}
-                        <button onClick={() => goToSection(condition.section)}>
+                        <button
+                          className="btn btn-neutral"
+                          onClick={() => goToSection(condition.section)}
+                        >
                           {condition.section}
                         </button>
                       </p>
@@ -124,6 +133,7 @@ function Section({ location, setSelectedLocation }: LocationProps) {
                               "GO TO"
                             )}
                             <button
+                              className="btn btn-neutral"
                               onClick={() => goToSection(condition.section)}
                             >
                               {condition.section}
@@ -140,12 +150,20 @@ function Section({ location, setSelectedLocation }: LocationProps) {
         })}
         {location.data.length > 1 &&
           Array.from({ length: location.data.length }, (_, i) => (
-            <button key={i} onClick={() => setSectionNumber(i)}>
+            <button
+              key={i}
+              className="btn btn-neutral mx-2"
+              onClick={() => setSectionNumber(i)}
+            >
               {i}
             </button>
           ))}
       </div>
-      <button onClick={() => goToSection("0.0")}>Back</button>
+      <div className="flex justify-center pt-5">
+        <button className="btn btn-ghost" onClick={() => goToSection("0.0")}>
+          Back
+        </button>
+      </div>
     </div>
   );
 }

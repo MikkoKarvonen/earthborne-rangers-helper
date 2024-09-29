@@ -11,7 +11,7 @@ const location22: LocationProp = {
           text: {
             type: "story",
             text: [
-              "Many years ago, Rangers strung a blind between towering trees, which has since been replaced by a multistory building. Here, biological research on the Valley’s unique wildlife, especially biomelds, takes place.",
+              "Many years ago, the Rangers strung a blind between several towering trees, large enough that half a dozen people could live in cozy comfort. In the time since, the blind was replaced by a multistory building, with space enough to accommodate a small village. Here the locals devoted to biological research study the Valley’s wildlife, especially focusing on the area’s unique biomelds.",
             ],
           },
         },

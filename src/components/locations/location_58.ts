@@ -100,7 +100,9 @@ as well.”`,
         {
           text: {
             type: "story",
-            text: [`Gain the ARCOLOGY ARCHAEOLOGY mission.`],
+            text: [
+              `“I also commonly work out of the Bubble beneath White Sky or out in the field at the Fractured Wall, so please stop in if you’re in the area!”`,
+            ],
           },
         },
       ],

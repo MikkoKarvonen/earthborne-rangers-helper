@@ -87,7 +87,7 @@ function Section({ location, setSelectedLocation }: LocationProps) {
                   }
                   if (condition.text !== undefined) {
                     const textSection = condition.text;
-                    return renderText(textSection);
+                    return <>OTHERWISE, READ: {renderText(textSection)}</>;
                   }
                 })}
               </div>
@@ -118,7 +118,11 @@ function Section({ location, setSelectedLocation }: LocationProps) {
                         <p>{condition.name}</p>
                         {condition.conditions.map((condition) => (
                           <p>
-                            If {condition.name}, go to{" "}
+                            {condition.name ? (
+                              <>{condition.name}, GO TO </>
+                            ) : (
+                              "GO TO"
+                            )}
                             <button
                               onClick={() => goToSection(condition.section)}
                             >

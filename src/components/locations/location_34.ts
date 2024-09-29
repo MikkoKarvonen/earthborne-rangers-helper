@@ -11,8 +11,7 @@ const location34: LocationProp = {
           text: {
             type: "story",
             text: [
-              "Silaro Mako, the Valley's preeminent archaeologist, set up this outpost many years ago with the help of his father. Since then, he has spent precious little time here, instead using it as a storage facility for many of the most interesting artifacts he's recovered during his expeditions.",
-              "Inside, you find tables covered with neatly catalogued and carefully arranged artifacts and several notebooks containing the observations of Silaro Mako and his colleagues.",
+              "Silaro Mako, the Valley's preeminent archaeologist, set up this outpost many years ago with the help of his father. Since then, he has spent precious little time here, instead using it as a storage facility for many of the most interesting artifacts he's recovered during his expeditions. Inside, you find tables covered with neatly catalogued and carefully arranged artifacts and several notebooks containing the observations of Silaro Mako and his colleagues.",
             ],
           },
         },
@@ -21,6 +20,14 @@ const location34: LocationProp = {
     {
       index: 1,
       section: [
+        {
+          text: {
+            type: "story",
+            text: [
+              "You sort through the notes left by Silaro Mako as well as other archaeologists and historians who have worked here over the years.",
+            ],
+          },
+        },
         {
           text: {
             type: "rule",

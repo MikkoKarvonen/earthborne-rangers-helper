@@ -10,13 +10,15 @@ const location19: LocationProp = {
         {
           condition: [
             { name: "DACE, AMBITIOUS SHAPER IS IN PLAY", section: "19.1" },
+            {
+              text: {
+                type: "story",
+                text: [
+                  "The Plummet is visible from kilometers away, a perfectly vertical, sheer cliff looming over the Valley. It’s impossible to climb, so the only way to the top is a series of dangerous trails around the edges, to approach it along the lip of the Valley from the north, or to zip to the summit on a spiderline.",
+                ],
+              },
+            },
           ],
-          text: {
-            type: "story",
-            text: [
-              "The Plummet is visible from kilometers away, a perfectly vertical, sheer cliff looming over the Valley. It’s impossible to climb, so the only way to the top is a series of dangerous trails around the edges, to approach it along the lip of the Valley from the north, or to zip to the summit on a spiderline.",
-            ],
-          },
         },
       ],
     },

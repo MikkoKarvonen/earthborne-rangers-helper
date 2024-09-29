@@ -227,7 +227,7 @@ const location94: LocationProp = {
                 ],
               },
               {
-                name: "If you haven’t completed THE FALL OF SPIRE:",
+                name: "If you haven’t:",
                 text: [
                   {
                     type: "story",

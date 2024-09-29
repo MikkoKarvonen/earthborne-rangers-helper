@@ -119,7 +119,6 @@ const location39: LocationProp = {
               section: "39.6",
             },
             {
-              name: "OTHERWISE",
               text: {
                 type: "story",
                 text: [
@@ -165,7 +164,6 @@ const location39: LocationProp = {
               section: "39.6",
             },
             {
-              name: "OTHERWISE",
               text: {
                 type: "story",
                 text: [

@@ -63,7 +63,7 @@ const location85: LocationProp = {
         },
         {
           choose: {
-            name: "RANGERS CHOOSE:",
+            name: "COUNT THE TOTAL FATIGUE BETWEEN ALL RANGERS, AND READ THE CORRESPONDING ENTRY:",
             values: [
               {
                 name: "0 Fatigue.",
@@ -129,15 +129,14 @@ const location85: LocationProp = {
             type: "story",
             text: [
               "Calypsa gestures to the field around you. 'As Rangers, we have a responsibility to the Valley. Not only to our friends and neighbors, but to the Valley and every living being within it.'",
-              "'Look around us,' she says, and you dutifully study the meadow. 'The grasses, the bushes, the insects, the birds … the Valley is full of life. When we move through it, we cannot help but affect it.' She takes a few steps then gestures behind her to the grass crushed beneath her boots.",
-              "'That’s why we should think before we act. It can often be better to observe and otherwise avoid the living things in the Valley. And when we can’t observe …'",
+              "'Look around us,' she says, and you dutifully study the meadow. 'The grasses, the bushes, the insects, the birds … the Valley is full of life. When we move through it, we cannot help but affect it.' She takes a few steps then gestures behind her to the grass crushed beneath her boots. 'That’s why we should think before we act. It can often be better to observe and otherwise avoid the living things in the Valley. And when we can’t observe …'",
               "She reaches into her pocket and pulls out a small chunk of meat. She tosses it into the middle of a field, and you hear a screech. An eagle swoops down, pouncing on the morsel. Calypsa smiles. 'It can be better to distract.'",
             ],
           },
         },
         {
           text: {
-            type: "story",
+            type: "rule",
             text: ["Exhaust one non-human being in play."],
           },
         },

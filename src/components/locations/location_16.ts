@@ -11,13 +11,15 @@ const location16: LocationProp = {
           condition: [
             { name: "SPIRIT SPEAKER NAL IS IN PLAY", section: "16.1" },
             { name: "KOBO’S MARKET IS FLOODED", section: "16.2" },
+            {
+              text: {
+                type: "story",
+                text: [
+                  "Given Ren Kobo’s Messipian heritage, it’s not surprising that he set up his market next to a clear, spring-fed lake. You see the market, bathed in sunlight, bursting with wares from both inside and outside the Valley. You hear the joyful chatter of bartering customers and merchants as you approach.",
+                ],
+              },
+            },
           ],
-          text: {
-            type: "story",
-            text: [
-              "Given Ren Kobo’s Messipian heritage, it’s not surprising that he set up his market next to a clear, spring-fed lake. You see the market, bathed in sunlight, bursting with wares from both inside and outside the Valley. You hear the joyful chatter of bartering customers and merchants as you approach.",
-            ],
-          },
         },
       ],
     },

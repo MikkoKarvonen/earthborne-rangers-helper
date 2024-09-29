@@ -36,14 +36,16 @@ const location9: LocationProp = {
         {
           condition: [
             { name: "YOU ARE AT THE MARSH OF REBIRTH", section: "9.3" },
+            {
+              text: {
+                type: "story",
+                text: [
+                  "You carefully pick through the vine-covered ruins. The ancient carbon- composite walls are hidden by muck and moss, worn down by water and weather.",
+                  "You brush aside a layer of grime and find a map carved into the wall. It shows this building as well as a large cluster of buildings deeper in the swamp. If there are any artifacts worth salvaging, you’ll probably find them in the Marsh of Rebirth. You step out of the ruins and get your bearings.",
+                ],
+              },
+            },
           ],
-          text: {
-            type: "story",
-            text: [
-              "You carefully pick through the vine-covered ruins. The ancient carbon- composite walls are hidden by muck and moss, worn down by water and weather.",
-              "You brush aside a layer of grime and find a map carved into the wall. It shows this building as well as a large cluster of buildings deeper in the swamp. If there are any artifacts worth salvaging, you’ll probably find them in the Marsh of Rebirth. You step out of the ruins and get your bearings.",
-            ],
-          },
         },
         {
           text: {

@@ -18,14 +18,16 @@ const location8: LocationProp = {
               name: "IT IS CURRENTLY DAY 6, 12, 18, 24, OR 30",
               section: "8.2",
             },
+            {
+              text: {
+                type: "story",
+                text: [
+                  "The grasses in this part of the Valley rise so tall that you don’t realize you’ve reached Meadow until the path suddenly opens, revealing several humble cottages centered around the stump of a fallen dolewood. A herd of ironwool sheep tend to the grass. A shepherd stands nearby, casually watching the sheep. He waves.",
+                  "“If you’re here for the festival, you’re early,” he says. “Pretty soon, this place will be full of people from all over the Valley—and sometimes beyond! There’s food, drink, music, and dancing! If there’s one thing we know how to do in Meadow, it’s how to throw a party.” An ironwool sheep pauses to give you a look, then quietly goes back to its grazing.",
+                ],
+              },
+            },
           ],
-          text: {
-            type: "story",
-            text: [
-              "The grasses in this part of the Valley rise so tall that you don’t realize you’ve reached Meadow until the path suddenly opens, revealing several humble cottages centered around the stump of a fallen dolewood. A herd of ironwool sheep tend to the grass. A shepherd stands nearby, casually watching the sheep. He waves.",
-              "“If you’re here for the festival, you’re early,” he says. “Pretty soon, this place will be full of people from all over the Valley—and sometimes beyond! There’s food, drink, music, and dancing! If there’s one thing we know how to do in Meadow, it’s how to throw a party.” An ironwool sheep pauses to give you a look, then quietly goes back to its grazing.",
-            ],
-          },
         },
       ],
     },

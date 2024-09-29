@@ -13,7 +13,7 @@ function App() {
     <div>
       {selectedLocation === 0 ? (
         <div>
-          {Array.from({ length: Object.keys(locations).length }, (_, i) => (
+          {Array.from({ length: Object.keys(locations).length + 1 }, (_, i) => (
             <button key={i} onClick={() => setSelectedLocation(i)}>
               {i}
             </button>

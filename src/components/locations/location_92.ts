@@ -2,7 +2,7 @@ import { LocationProp } from "../../types/LocationProp";
 
 const location92: LocationProp = {
   location: 92,
-  name: "TUMBLEDOWN",
+  name: "DEEPER MOTIVES",
   data: [
     {
       index: 0,

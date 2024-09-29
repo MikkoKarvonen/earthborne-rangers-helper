@@ -112,7 +112,7 @@ const location80: LocationProp = {
         },
         {
           text: {
-            type: "story",
+            type: "rule",
             text: [
               "Draw a challenge card. Read one entry based on the challenge icon on the drawn card:",
             ],

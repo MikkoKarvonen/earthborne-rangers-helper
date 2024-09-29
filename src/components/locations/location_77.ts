@@ -113,8 +113,7 @@ const location77: LocationProp = {
           text: {
             type: "story",
             text: [
-              "Wellers smiles slightly. 'There’s not too many of us around here. Tumbledown is a small settlement, and there’s always a chance something comes storming out of the Verdessa looking for a meal.'",
-              "'Most people prefer the quiet of Meadow or Branch.'",
+              "Wellers smiles slightly. 'There’s not too many of us around here. Tumbledown is a small settlement, and there’s always a chance something comes storming out of the Verdessa looking for a meal. Most people prefer the quiet of Meadow or Branch.'",
               "'However,' he hesitates for a moment, then continues. 'Have you met Kasende? She's one of the best hunters in the southern Valley, but she spends a lot of time hunting hydraworms near the Marsh of Rebirth, and she last left Tumbledown two days ago. It’s possible she's fine … but an old man can’t help but worry, I guess. Can you look for her?'",
             ],
           },

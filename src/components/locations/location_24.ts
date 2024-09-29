@@ -41,6 +41,7 @@ const location24: LocationProp = {
             text: [
               "Set aside your other game components. Shuffle the challenge discard into the challenge deck.",
               "Starting with the lead Ranger, going clockwise, each Ranger may draw a challenge card and place it faceup in front of them, or choose to pass. Once a Ranger passes, they are out, and cannot draw any more challenge cards.",
+              "If a Ranger draws a challenge card with a  icon, they may choose to place it in front of a different Ranger who has not passed.",
               "When any Ranger has a matching pair of challenge icons in front of them, do the following based on which icon there’s a pair of:",
               "2 or more : You have conquered your fears! Gain the Face Your Fears reward card.",
               "2 or more : You gain flashes of insight into your near future. Scout 6 path cards and gain 1 energy of each aspect.",
@@ -56,6 +57,13 @@ const location24: LocationProp = {
               "You sit up to find the knoll still bathed in the dull red glow of late evening. Jaris sits up as well, gasping suddenly, then visibly relaxes when he sees you. For a long moment, you silently stare at each other. Jaris shudders. “Let’s get out of here,” he says.",
               "You clasp Jaris on the shoulder and congratulate him on being tough enough to sleep on Greenbriar Knoll.",
               "Jaris places his hand on your shoulder, clearly affected. “It wasn’t at all like people said. It was like the knoll was trying to get me to understand something. I’m not sure what.” Jaris gives you a rare smile, then starts down the trail back to Meadow.",
+            ],
+          },
+        },
+        {
+          text: {
+            type: "rule",
+            text: [
               "Discard Jaris. Return HELPING HAND to the collection. Write FACED YOUR DEEPEST FEARS on the campaign tracker. Shuffle the challenge discard into the challenge deck.",
             ],
           },

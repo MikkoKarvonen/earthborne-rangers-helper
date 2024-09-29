@@ -8,14 +8,14 @@ const location42: LocationProp = {
       index: 0,
       section: [
         {
-          multiCondition: [
+          condition: [
             {
               name: "ENTERS PLAY",
-              conditions: [{ section: "42.1" }],
+              section: "42.1",
             },
             {
               name: "CLEAR ",
-              conditions: [{ section: "42.2" }],
+              section: "42.2",
             },
           ],
         },

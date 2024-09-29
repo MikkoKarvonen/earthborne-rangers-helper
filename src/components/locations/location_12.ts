@@ -11,13 +11,15 @@ const location12: LocationProp = {
           condition: [
             { name: "AR TEL IS IN PLAY", section: "12.1" },
             { name: "GOLDEN SHORE IS FLOODED", section: "12.2" },
+            {
+              text: {
+                type: "story",
+                text: [
+                  "Wherever sunlight kisses the shoreline, you can see how the Golden Shore earned its name: countless flecks of gold glitter beneath the water, sparkling through the light reflected off the surface. A wind comes in off the water, causing the grass to rustle with a soft hiss.",
+                ],
+              },
+            },
           ],
-          text: {
-            type: "story",
-            text: [
-              "Wherever sunlight kisses the shoreline, you can see how the Golden Shore earned its name: countless flecks of gold glitter beneath the water, sparkling through the light reflected off the surface. A wind comes in off the water, causing the grass to rustle with a soft hiss.",
-            ],
-          },
         },
       ],
     },

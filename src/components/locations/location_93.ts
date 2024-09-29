@@ -61,7 +61,8 @@ const location93: LocationProp = {
           text: {
             type: "rule",
             text: [
-              "Clear Dace with  to get her group out of the village. If you have KIND WORDS WITH DACE, add 2  to her.",
+              "Clear Dace with  to get her group out of the village.",
+              "If you have KIND WORDS WITH DACE, add 2  to her.",
             ],
           },
         },
@@ -84,7 +85,8 @@ const location93: LocationProp = {
           text: {
             type: "rule",
             text: [
-              "Clear Elder Orlin with  to get her group out of the city. If you have IMPRESSED ELDER ORLIN, add 2  to her.",
+              "Clear Elder Orlin with  to get her group out of the city.",
+              "If you have IMPRESSED ELDER ORLIN, add 2  to her.",
             ],
           },
         },
@@ -106,7 +108,8 @@ const location93: LocationProp = {
           text: {
             type: "rule",
             text: [
-              "Clear Tollin with  to get his group out of the city. If you have APPRECIATED TOLLIN’S ART, add 2  to him.",
+              "Clear Tollin with  to get his group out of the city.",
+              "If you have APPRECIATED TOLLIN’S ART, add 2  to him.",
             ],
           },
         },
@@ -141,6 +144,13 @@ const location93: LocationProp = {
             type: "story",
             text: [
               "It takes almost an hour, but you finally get Dace’s group to the safety of the far bank of the Silverfin River. Dace herself carries the last of the people—a young boy—in a bounding flight across the water. Accompanied by a rush of wind, she gracefully lands beside you. 'Thank you,' she says. 'I can take it from here.'",
+            ],
+          },
+        },
+        {
+          text: {
+            type: "rule",
+            text: [
               "Write DACE’S GROUP SAVED on the campaign tracker, and return Dace, Ambitious Shaper to the collection.",
             ],
           },
@@ -156,6 +166,13 @@ const location93: LocationProp = {
             text: [
               "You and Elder Orlin’s group steadily make your way across the bridge, fighting off reclaimers with every step. Elder Orlin stands shoulder to shoulder with you, swinging her hammer at any reclaimer that dares cross her path.",
               "Once you reach the bank of the Silverfin, Elder Orlin catches her breath. 'I haven't gotten that much exercise in eighty years!' she says as she wipes the sweat from her brow. 'You've done well. I can keep an eye on them from here.'",
+            ],
+          },
+        },
+        {
+          text: {
+            type: "rule",
+            text: [
               "Write ELDER ORLIN’S GROUP SAVED on the campaign tracker, and return Elder Mora Orlin to the collection.",
             ],
           },
@@ -170,6 +187,13 @@ const location93: LocationProp = {
             type: "story",
             text: [
               "You lead Tollin’s group down to the intake inlets for Spire’s hydroelectric generators. There you find a pair of large seed barges and get everyone aboard. As they cast off, Tollin claps you on your shoulder. 'Thanks for getting us out! I think we'll be all right if you still need to help anyone else.'",
+            ],
+          },
+        },
+        {
+          text: {
+            type: "rule",
+            text: [
               "Write TOLLIN’S GROUP SAVED on the campaign tracker, and return Tollin Lang, Sculptor to the collection.",
             ],
           },

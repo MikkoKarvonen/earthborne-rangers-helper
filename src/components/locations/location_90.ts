@@ -11,15 +11,15 @@ const location90: LocationProp = {
           multiCondition: [
             {
               name: "ENTERS PLAY",
-              conditions: [{ name: "GO TO", section: "90.1" }],
+              conditions: [{ section: "90.1" }],
             },
             {
               name: "CLEAR ",
-              conditions: [{ name: "GO TO", section: "90.2" }],
+              conditions: [{ section: "90.2" }],
             },
             {
               name: "CLEAR ",
-              conditions: [{ name: "GO TO", section: "90.3" }],
+              conditions: [{ section: "90.3" }],
             },
           ],
         },

@@ -125,6 +125,35 @@ brother and sister?"`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the SEARCH (VIRA) mission. Reminder: search the White Sky set for Vira and attach her facedown to the mission card. Record 94.8 three days from now on the campaign tracker. You may choose this option only if you don’t have another Search or Rescue mission. Discard Elder Hale.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Leave Vira to someone else.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Elder Hale. Record 94.8 three days from now on the campaign tracker.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {

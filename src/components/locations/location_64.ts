@@ -131,6 +131,33 @@ taste of the sweet stuff together!”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Seilo."],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Seilo and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -150,6 +177,33 @@ trips already in the last week!”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Seilo.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Seilo. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -164,6 +218,33 @@ trips already in the last week!”`,
 shiftin’ colors with the rise and fall of the sun. I can’t help but wonder
 what kind of honey those little buzzers are cooking up out there. If
 you wanna make history with me, I’ll let you tag along … ”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Seilo.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Seilo. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

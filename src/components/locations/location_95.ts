@@ -1,26 +1,64 @@
-const location7 = {
-  location: 9,
-  name: "THE MARSH OF REBIRTH",
+import { LocationProp } from "../../types/LocationProp";
+
+const location95: LocationProp = {
+  location: 95,
+  name: "FLOOD DAMAGE",
   data: [
     {
       index: 0,
-      text: [
+      section: [
         {
-          type: "story",
-          text: "The Marsh of Rebirth is the very heart of the swamp—a swirling morass of sluggish currents and thick waters stained with tannins. The heavy, humid stench of rot fills your nostrils, but despite the smell, the oxygen-rich air leaves you feeling invigorated. The Marsh of Rebirth is a place of decay and death but also of newborn life.",
+          choose: {
+            name: "READ THE ENTRY CORRESPONDING TO YOUR CURRENT LOCATION:",
+            values: [
+              {
+                name: "White Sky:",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "After the hard work of reattaching torn sails on White Sky's platforms and cleaning the paths along the shoreline, the lake is beginning to look like its old self again.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "Kobo’s Market:",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "After hours of bailing water and reassembling stalls, the market row is clearing up. It will take a while for everything to dry out, but trade has returned to Kobo's market.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "Golden Shore:",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "You spend hours moving trees and reinforcing the banks of tributary streams. As you finish up, you look back over your handiwork and can see the telltale gleam of the shore's sands showing through once again.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
         },
-      ],
-    },
-    {
-      index: 1,
-      text: [
         {
-          type: "story",
-          text: "For the last hour, the ground under your feet has been growing soggier. The rich scent of loam and decay fills your nose. Finally, you walk under a corridor of arching boughs draped with hanging moss and find yourself standing on a narrow spit of dry land leading into a morass of black water, vines, and cypress trees. You’ve found a path that leads to the Marsh of Rebirth.",
+          text: {
+            type: "rule",
+            text: [
+              "Continue reading:",
+              "Discard Flood Damage. Cross off the FLOODED entry on your campaign tracker corresponding to your current location. Each Ranger soothes 4 fatigue.",
+            ],
+          },
         },
       ],
     },
   ],
 };
 
-export default location7;
+export default location95;

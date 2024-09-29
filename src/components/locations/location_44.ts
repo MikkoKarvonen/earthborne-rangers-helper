@@ -105,6 +105,35 @@ const location44: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Continue helping Kordo.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Remove all , and keep HELPING HAND attached to Kordo, Ranger Veteran.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Send him back to Lone Tree.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Kordo, Ranger Veteran and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -135,6 +164,35 @@ const location44: LocationProp = {
             text: [
               "“You know,” Kordo says, a sly smile crossing his weather-beaten features. “Now that you’re no longer in training, Elder Thrush can’t stop you from coming on a hunt with me on account of it being ‘too dangerous.’”",
               "“Up in the Northern Woods, the ones in the mountains beyond the Valley, there’s something up there that’s evaded every snare, and I’ve lost every time I try to follow it. To this day, I haven’t spotted more than a shadow in the trees.” He sticks out his hand. “What do you say, fellows? Want to head up north with me and help me catch my greatest quarry?”",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Accompany Kordo to the Northern Outpost.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Kordo, Ranger Veteran.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Some other time.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Kordo, Ranger Veteran. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
             ],
           },
         },

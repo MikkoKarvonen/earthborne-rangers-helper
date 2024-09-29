@@ -85,6 +85,33 @@ const location84: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Continue Helping Her.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Tala."],
+                  },
+                ],
+              },
+              {
+                name: "B) Stop for Today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Tala and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -114,6 +141,41 @@ const location84: LocationProp = {
             type: "story",
             text: [
               "You know a little about the Ice Clans; they’re said to live in massive frozen palaces in the coldest parts of mountains. You ask Tala why she is 'formerly' from the Ice Clans, and she glares and looks away. 'It’s because I was exiled,' she says. 'Now I’m looking for a place to live. You got a problem with me living in your precious Valley?'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) No problem whatsoever.",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "Despite her harshness, you think you sense a bit of vulnerability in her response. Hesitantly, you suggest that if she is looking for a place to live, you could take her around the Valley and see if any of the villages would be a good fit.",
+                      "Tala looks startled at the offer. “You’d … help me with that?” When you assure her that you would, she sets her face back into a stern expression. “Thanks, then. Let’s go.” You set off, figuring that you’ll have to take her to different inhabited locations to see how she feels about each.",
+                      "White Sky, Spire, Branch, Meadow, or Tumbledown all seem like good possibilities to you.",
+                    ],
+                  },
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Tala.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Leave her in peace.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Tala. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

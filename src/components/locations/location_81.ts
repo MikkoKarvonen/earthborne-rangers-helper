@@ -87,6 +87,33 @@ const location81: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Continue helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Oura."],
+                  },
+                ],
+              },
+              {
+                name: "B) Say goodbye.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Oura and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -100,6 +127,33 @@ const location81: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Oura.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Oura. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -110,6 +164,33 @@ const location81: LocationProp = {
             type: "story",
             text: [
               "You offer to help, and Oura smiles gratefully. 'Thank you so much! I’ve been tracking Quisi for hours. I think I know where she’s going, but somehow the little trailblazer is always one step ahead of me. Maybe you can help?'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Oura.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Oura. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

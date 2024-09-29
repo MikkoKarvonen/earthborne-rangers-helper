@@ -139,6 +139,35 @@ gets eaten.”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the LURE (OL’ BLOODY CLICKER) mission. Reminder: find Ol’ Bloody Clicker, and attach him to the mission card. You may choose this option only if you don’t have another Lure or Confront mission. Discard Elder Abel.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Elder Abel. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {

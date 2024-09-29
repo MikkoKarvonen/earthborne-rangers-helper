@@ -91,6 +91,33 @@ const location70: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Last one there’s a rotten dolewood!",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Jaris."],
+                  },
+                ],
+              },
+              {
+                name: "B) No. Farewell for now.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Jaris and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -102,6 +129,33 @@ const location70: LocationProp = {
             text: [
               "You regale the lad with stories of your adventures around the Valley, and Jaris drinks it all in without interruption. Then you take out some of the odd gear you’ve collected and demonstrate its use. At that point, a herd of stilt-horses could run over Jaris and he wouldn’t notice.",
               "After a while, you notice that Jaris’s questions are coming slower, and he seems to be paying less attention. You ask him what is on his mind, and he thinks for a moment. 'So, this is going to sound silly … but I was thinking. When I was up on Greenbriar Knoll … well, that was the most scared I’ve ever been in my life. But if I was going to be a Ranger, I need to learn to face my fears, right? So … would you be willing to go up Greenbriar again with me?'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Why not?",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Jaris.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Jaris. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -118,6 +172,33 @@ const location70: LocationProp = {
               "'Huh,' Jaris says. You see a flicker of grudging respect. 'I guess you know what you’re doing after all.'",
               "He thinks for a moment, then grins slyly. 'You think you have what it takes to do something really tough? I hear that if someone goes and spends the night on Greenbriar Knoll, they have the worst nightmares of their life. I knew this one guy. He couldn’t stop crying! A spiritspeaker needed to do a lot of work to help him get better.'",
               "He raises an eyebrow. “What about it? I’m game if you are.”",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) All right, Jaris. Let’s do this.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Jaris.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) We don’t have time for this.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Jaris. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

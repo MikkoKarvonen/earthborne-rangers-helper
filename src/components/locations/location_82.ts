@@ -111,6 +111,33 @@ const location82: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Absolutely!",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Sil."],
+                  },
+                ],
+              },
+              {
+                name: "B) Say goodbye.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Sil and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -124,6 +151,33 @@ const location82: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Not at all!",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Sil.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Maybe next time.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Sil. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -134,6 +188,33 @@ const location82: LocationProp = {
             type: "story",
             text: [
               "'And ... done! I love your cloak! Such a nice color.' She takes a step back and appraises her work. 'You know, I can’t help but think that you would look even more heroic if you were posed on a mountain, with a sweeping view of the Valley behind you. I don’t suppose you'd be willing to accompany me to the top of a mountain and pose for me there? What do you think?'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Sounds fun! ",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Sil.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Some other time.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Sil. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

@@ -172,6 +172,33 @@ const location76: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Kasende."],
+                  },
+                ],
+              },
+              {
+                name: "B) Part ways.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Kasende and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -185,6 +212,33 @@ const location76: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Kasende.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Kasende. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -195,6 +249,33 @@ const location76: LocationProp = {
             type: "story",
             text: [
               "Kasende looks up and down with a blank expression. 'Alright, you can come help if you want. We're heading to the Frowning Gate. Try to keep up.'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Kasende.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Kasende. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

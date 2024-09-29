@@ -35,7 +35,7 @@ const location28: LocationProp = {
             name: "RANGERS CHOOSE:",
             values: [
               {
-                name: "Take the path along the side.",
+                name: "A) Take the path along the side.",
                 text: [
                   {
                     type: "rule",
@@ -51,7 +51,7 @@ const location28: LocationProp = {
                 ],
               },
               {
-                name: "Take the log through the pool.",
+                name: "B) Take the log through the pool.",
                 text: [
                   {
                     type: "rule",

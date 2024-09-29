@@ -134,6 +134,33 @@ get to the Plummet?” she asks. “If not, I think I should head back.”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Dace."],
+                  },
+                ],
+              },
+              {
+                name: "B) Part ways.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Dace and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -149,6 +176,33 @@ every day!”`,
               `She looks over at you with a slightly guilty grin. “In fact, I don’t
 suppose you would mind taking me back to the Plummet? I’d like to
 try that jump again now that I know so much more!”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Dace.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Dace. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -173,6 +227,35 @@ commit and trust in my ability.”`,
               `She suddenly looks at you. “You know what? I say it's now or never.
 Do you know the way to the Plummet? Can you take me there so I
 can jump off?”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Sounds fun. Let's do it.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Dace.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) I don't know about this plan of yours.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Although you can’t help today, you spend some time speaking with her about her ambitions toward flight. Discard Dace, and write KIND WORDS WITH DACE on the campaign tracker.",
+                    ],
+                  },
+                ],
+              },
             ],
           },
         },

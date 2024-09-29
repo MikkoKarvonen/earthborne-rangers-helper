@@ -100,6 +100,33 @@ do you think?” Confused but intrigued, you take a look for yourself.`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Silaro."],
+                  },
+                ],
+              },
+              {
+                name: "B) Part ways.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Silaro and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -117,6 +144,33 @@ distributed across the Valley …” He pauses for a moment, then his
 eyes widen. “You wouldn’t happen to be heading back to say … Spire
 or Branch? Ooo or White Sky, by any chance?” He smiles sheepishly.
 “It’s just … I have another, uh, time sensitive hypothesis to unravel.”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  and attach the HELPING HAND mission to Silaro.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Silaro. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -142,6 +196,33 @@ and another from say… White Sky, Branch or Spire, I could determine
 if the same calcium deposits are indeed present! I know the paths
 can be winding and dangerous, but maybe you’d be willing to
 accompany me?”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  and attach the HELPING HAND mission to Silaro.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Silaro. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

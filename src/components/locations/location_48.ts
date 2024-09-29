@@ -104,6 +104,33 @@ const location48: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep accompanying Ar Tel to Golden Shore.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Ar Tel."],
+                  },
+                ],
+              },
+              {
+                name: "B) Send Ar Tel home.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Ar Tel and return HELPING HAND to your collection. Each Ranger soothes 1 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -117,6 +144,33 @@ const location48: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to bring Ar Tel to Golden Shore.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  from Ar Tel. Attach the HELPING HAND mission to Ar Tel.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Ar Tel. Each Ranger soothes 1 fatigue."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -127,6 +181,33 @@ const location48: LocationProp = {
             type: "story",
             text: [
               "Ar Tel harrumphs. “Not sure what it is, but the fishing’s been terrible for weeks! I think something spooked the fish in these parts. I can feel it!” The angler appears contemplative for a moment. “Actually, I’ve been hearing tales of some amazing fishing spots across the lake at the Golden Shore. Maybe all the fish moved up there! Would you be willing to accompany me? I’d sure appreciate an escort, what with the ‘fish spooker’ hanging around somewhere.”",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to bring Ar Tel to Golden Shore.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  from Ar Tel. Attach the HELPING HAND mission to Ar Tel.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Ar Tel. Each Ranger soothes 1 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

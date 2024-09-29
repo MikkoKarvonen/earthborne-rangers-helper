@@ -142,6 +142,35 @@ think you could get her to leave us in peace?”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the LURE (QUIET) mission. Reminder: find Quiet in the Valley set, and attach her facedown to the mission card. You may choose this option only if you don’t have another Lure or Confront mission. Discard Elder Gral.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Elder Gral. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {

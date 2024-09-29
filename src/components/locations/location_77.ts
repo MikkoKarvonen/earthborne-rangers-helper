@@ -119,6 +119,35 @@ const location77: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the SEARCH (KASENDE) mission. Reminder: search the Tumbledown set for Kasende and attach her facedown to the mission card. Record 94.9 three days from now on the campaign tracker. You may choose this option only if you don’t have another Search or Rescue mission. Discard Elder Wellers.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Leave Kasende to someone else.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Elder Wellers. Record 94.9 three days from now on the campaign tracker.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {

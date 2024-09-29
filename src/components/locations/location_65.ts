@@ -137,6 +137,33 @@ can show you how to make one.”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Lyn."],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Lyn and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -154,6 +181,33 @@ asking.”`,
               `She gestures back to her tools. “Though, if you ain’t too busy, maybe
 you could help me build a canoe for some folk? Seems like you had a
 knack for it when you put the last one together.”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Lyn.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Lyn. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -177,6 +231,33 @@ Basin where there’s the right kind of wood to be found. Now, I could
 carve it for you … but if you want her to take care of you, you need
 to know every notch and groove. Come with me, and I’ll show you
 how to make one.”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Lyn.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Lyn. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

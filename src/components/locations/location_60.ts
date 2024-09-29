@@ -109,6 +109,35 @@ const location60: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the LURE (UMBRA) mission. Reminder: find Umbra and attach her to the mission card. You may choose this option only if you don’t have another Lure or Confront mission. Discard Elder Orlin.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Elder Orlin. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {

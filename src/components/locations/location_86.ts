@@ -93,6 +93,35 @@ const location86: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Have him stay and continue helping you.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  from the Fundamentalist, and move him.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Say goodbye.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard the Fundamentalist. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -106,6 +135,35 @@ const location86: LocationProp = {
               "He thinks for another moment, then abruptly speaks. 'I guess it’s because of how I live,' he says. 'I don’t see us having any right to build houses and lay down roads across this Valley. That’s just us imposing our will on the rest of the world, which we have no more right to do than any other animal.'",
               "You ask if human sapience changes the situation at all, and he waves his hands as if driving off a fly. 'You sound like all the rest. No, no, our sapience just means we should recognize our capacity to change the world, and then make the conscious choice to reject that.'",
               "As he talks, he starts to pack his things. In a minute, he is ready to leave. Unless you ask him to stay, he is clearly going to head out.",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Have him stay and continue helping you.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  from the Fundamentalist, and move him.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Say goodbye.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard the Fundamentalist. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
             ],
           },
         },

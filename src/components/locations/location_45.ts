@@ -135,6 +135,31 @@ const location45: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree with Kordo. The mulcher must go.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Gain the INTERVENTION mission."],
+                  },
+                ],
+              },
+              {
+                name: "B) Agree with Nal. The mulcher is misunderstood.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Gain the ACCOMMODATION mission."],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -145,6 +170,33 @@ const location45: LocationProp = {
             type: "story",
             text: [
               "Nal catches you glancing anxiously at the position of the sun. She puts an arm on your shoulder. “You’re worried about the time, I can tell. Do you need to return to your task, or can you still accompany me to Kobo's Market?”",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Continue helping Nal.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Spirit Speaker Nal."],
+                  },
+                ],
+              },
+              {
+                name: "B) Part company.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Spirit Speaker Nal and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -161,6 +213,35 @@ const location45: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Accompany Nal to Kobo’s Market.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  and attach the HELPING HAND mission to Spirit Speaker Nal.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Some other time.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Spirit Speaker Nal. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -173,6 +254,35 @@ const location45: LocationProp = {
               "Nal stands, and the floating disk which was hovering before her settles gently to the ground.",
               "'As you know, Elder Thrush depends on me to communicate telepathically with Rangers in the field, but to do so effectively, Irequire the support of the most powerful spirits of this land. One of those, interestingly enough, is the spirit of the Verdessa. It shares a deep connection with the spirit of the Valley—like a mother to her child—and for some reason, I cannot reach it. It's very distressing.",
               "'I've received word that a wandering botanist has recently returned from an excursion to the Verdessa, and that she's brought some rare plant specimens along with her. She is currently staying at the merchant's quarters in Kobo's Market. If I had one of these specimens, I may be able to use it to reconnect with the spirit of the Verdessa. Perhaps you could accompany me to the market? I would be very grateful.'",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Accompany Nal to Kobo’s Market.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  and attach the HELPING HAND mission to Spirit Speaker Nal.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Some other time.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Spirit Speaker Nal. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
             ],
           },
         },

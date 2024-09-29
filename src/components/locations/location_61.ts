@@ -136,6 +136,33 @@ just head back to Spire, or Branch, and continue my work there?”`,
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Tollin."],
+                  },
+                ],
+              },
+              {
+                name: "B) Part ways.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Tollin and return HELPING HAND to your collection. Each Ranger soothes 2 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -151,6 +178,33 @@ that there’s always a bigger fish out there?” He laughs. “But I have
 to admit, I’d like a break to approach this with a fresh eye, and the
 Stoneweaver sculpture should get checked to make sure it’s working
 correctly. Don’t suppose you’d like to take me down there again?”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Tollin. Write APPRECIATED TOLLIN’S ART on the campaign tracker.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Tollin. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },
@@ -176,6 +230,33 @@ Could you help me take the sculpture to Stoneweaver Bridge? I bet
 it would be really easy if we had a boat; maybe one of the ones Lyn
 Mira makes out in Branch? But we could just carry the materials there
 too.”`,
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Tollin.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Tollin. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

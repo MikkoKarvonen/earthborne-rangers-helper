@@ -64,6 +64,33 @@ const location47: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to keep helping.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard all  from Hy Pimpot."],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Hy Pimpot and return HELPING HAND to your collection. Each Ranger soothes 1 fatigue.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -74,6 +101,33 @@ const location47: LocationProp = {
             type: "story",
             text: [
               "”Well … ” Hy says in a way that makes it very clear that he was waiting for you to ask. “I’m tired of making my soup with the same pepper-pods and northern potatoes that grow around these parts. I just remember how good it can be when someone gets some of the herbs and tubers from elsewhere in the Valley.” He stares at you intently. “I could use someone. Someone bold, hardy, and already exploring the Valley to accompany me on an adventure… ”",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to help gather ingredients.",
+                text: [
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all  from Hy, and attach the HELPING HAND mission to him.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Hy. Each Ranger soothes 1 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

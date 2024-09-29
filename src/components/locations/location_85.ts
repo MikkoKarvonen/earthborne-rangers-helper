@@ -61,6 +61,64 @@ const location85: LocationProp = {
             ],
           },
         },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "0 Fatigue.",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "Calypsa shakes her head. “Did you even bother to try?”",
+                    ],
+                  },
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Calypsa and return HELPING HAND to the collection.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "1 - 4 Fatigue.",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "Calypsa smiles at you. “A good effort. But I’m afraid Kal pushed himself further than you did. He’ll win this competition for today.”",
+                    ],
+                  },
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard Calypsa and return HELPING HAND to the collection.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "More than 4 Fatigue.",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "Calypsa raises her eyebrows. “Oh my. Very well done! You win the competition.” She claps your shoulder and slips a small badge into your hands, then looks serious. “Now, just remember to not push yourself harder than you need to. As with so many things, we should try and find balance in our actions.”",
+                    ],
+                  },
+                  {
+                    type: "rule",
+                    text: [
+                      "Gain the Ranger Badge reward card. Discard Calypsa and return HELPING HAND to the collection.",
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        },
       ],
     },
     {
@@ -97,6 +155,40 @@ const location85: LocationProp = {
             type: "rule",
             text: [
               "If you take on this challenge, it will discard your current fatigue stack.",
+            ],
+          },
+        },
+        {
+          choose: {
+            name: "RANGERS CHOOSE:",
+            values: [
+              {
+                name: "A) Agree to the test.",
+                text: [
+                  {
+                    type: "story",
+                    text: [
+                      "Calypsa smiles. “Very good! Alright, go and suffer as much fatigue as you can, then come check back in with me. Whoever pushes themselves further will get a reward.”",
+                      "Kal grins at you. “I’d wish you good luck, but all the luck in the world isn’t going to help you beat me.”",
+                    ],
+                  },
+                  {
+                    type: "rule",
+                    text: [
+                      "Discard all , and attach the HELPING HAND mission to Calypsa. Each Ranger discards their fatigue stack.",
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "B) Not today.",
+                text: [
+                  {
+                    type: "rule",
+                    text: ["Discard Calypsa. Each Ranger soothes 2 fatigue."],
+                  },
+                ],
+              },
             ],
           },
         },

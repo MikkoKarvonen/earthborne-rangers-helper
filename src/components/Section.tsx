@@ -73,15 +73,15 @@ function Section({ location, setSelectedLocation }: LocationProps) {
           </button>
         </div>
         {section.section.map((s) => {
-          if (s.text !== undefined) {
+          if (s.text) {
             const textSection = s.text;
             return renderText(textSection);
           }
-          if (s.condition !== undefined) {
+          if (s.condition) {
             return (
               <div>
                 {s.condition.map((condition) => {
-                  if (condition.name !== undefined) {
+                  if (condition.name) {
                     return (
                       <p>
                         If {condition.name}, go to{" "}
@@ -94,7 +94,7 @@ function Section({ location, setSelectedLocation }: LocationProps) {
                       </p>
                     );
                   }
-                  if (condition.text !== undefined) {
+                  if (condition.text) {
                     const textSection = condition.text;
                     return <>OTHERWISE, READ: {renderText(textSection)}</>;
                   }
@@ -102,7 +102,7 @@ function Section({ location, setSelectedLocation }: LocationProps) {
               </div>
             );
           }
-          if (s.choose !== undefined) {
+          if (s.choose) {
             return (
               <div>
                 <p>{s.choose.name}</p>
@@ -117,11 +117,11 @@ function Section({ location, setSelectedLocation }: LocationProps) {
               </div>
             );
           }
-          if (s.multiCondition !== undefined) {
+          if (s.multiCondition) {
             return (
               <div>
                 {s.multiCondition.map((condition) => {
-                  if (condition.name !== undefined) {
+                  if (condition.name) {
                     return (
                       <>
                         <p>{condition.name}</p>

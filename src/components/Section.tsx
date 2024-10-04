@@ -68,9 +68,11 @@ function Section({ location, setSelectedLocation }: LocationProps) {
           <p>
             {location.location}.{sectionNumber}
           </p>
-          <button className="btn btn-neutral" onClick={() => audioHandler()}>
-            {audioPlaying ? "◼" : "⏵"}
-          </button>
+          {import.meta.env.VITE_ENABLE_AUDIO && (
+            <button className="btn btn-neutral" onClick={() => audioHandler()}>
+              {audioPlaying ? "◼" : "⏵"}
+            </button>
+          )}
         </div>
         {section.section.map((s) => {
           if (s.text) {
